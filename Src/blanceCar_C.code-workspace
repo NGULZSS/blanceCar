@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "blanceCar_C",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"adc.h": "c",
+			"main.h": "c",
+			"inv_mpu.h": "c",
+			"inv_mpu_dmp_motion_driver.h": "c",
+			"gpio.h": "c",
+			"i2c.h": "c",
+			"mpuiic.h": "c",
+			"oled.h": "c",
+			"bmp.h": "c",
+			"control.h": "c",
+			"mpu6050.h": "c",
+			"print.h": "c"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "blanceCar_C",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"limits": "cpp",
+			"type_traits": "cpp",
+			"cmath": "cpp"
+		}
+	}
+}
