@@ -12,6 +12,17 @@
 
 #define Middle_angle 0
 #define DIFFERENCE 100
+    struct UprightRingPID
+    {
+       float P;
+       float D;
+    }UprightRingPIDs;
+    struct VelocityRingPID
+    {
+       float P;
+       float I;
+       float D;
+    }VelocityRingPIDs;
 
 struct Gyroscope_Information  //陀螺仪信息
 {
@@ -39,7 +50,8 @@ int Pick_Up(float Acceleration,float Angle,int encoder_left,int encoder_right);
 int Put_Down(float Angle,int encoder_left,int encoder_right);
 void Get_Velocity_Form_Encoder(int encoder_left,int encoder_right);
 void Choose(int encoder_left,int encoder_right);
-
+int SpeedDealRigit(int SPEED);
+int SpeedDealLeft(int SPEED);
 
 
 

@@ -60,9 +60,10 @@ int main(void)
    mpu_dmp_init();
    HAL_NVIC_EnableIRQ(EXTI15_10_IRQn); //开启引脚外部中断
    HAL_Delay(100);
-   oled_show_string(0,0,"Mode:",2);
+  //  oled_show_string(0,0,"Mode:",2);
   Red_LED_OFF;
   Green_LED_OFF;
+  STBY_LOW
   while (1)
   {
     // delay_flag=1;
@@ -73,7 +74,7 @@ int main(void)
   if(delay_flag==1)
   {   
 
-  oled_show(3);
+  oled_show(2);
       
     HAL_ADC_Start(&hadc1); 
     HAL_ADC_PollForConversion(&hadc1, 50); 
@@ -94,7 +95,7 @@ int main(void)
  OLED_ShowNum(112,2,delay_50,1,16);
 
 
-    // STBY_HIGH;
+     
     // BN1_HIGH;
     // BN2_LOW;
     //  AN1_LOW;

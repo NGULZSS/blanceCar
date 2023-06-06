@@ -69,6 +69,9 @@ typedef uint32_t u32;
 struct ShowData
 {
     float Angle_Balance;  //平衡角
+    float AC_Angle_Balance;  //平衡角速度
+    float AX_Angle_Balance;  //平衡角速度
+    float AY_Angle_Balance;  //平衡角速度
     float Voltage;        //电压
     float LeftWheel_Velocity;  //左轮速度
     float RightWheel_Velocity; //右轮速度
