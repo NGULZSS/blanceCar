@@ -2,6 +2,7 @@
     "files.associations": {
         "main.h": "c",
         "stm32f4xx_hal.h": "c",
-        "control.h": "c"
+        "control.h": "c",
+        "adc.h": "c"
     }
 }

@@ -9,7 +9,7 @@ void oled_show(int way)
     }
     else if(way==2)
     {
-    oled_show_string(40,0,"Kalman",2);
+    oled_show_string(40,0,"Kalmans",2);
     }
     else if(way==3)
     {
@@ -21,10 +21,10 @@ void oled_show(int way)
     OLED_ShowAllFloat(12,4,ShowDataCo.Voltage,2,16,0);
     oled_show_string(60,4,"T:",2);
     OLED_ShowAllFloat(72,4,ShowDataCo.Temperature,2,16,0);
-    oled_show_string(0,6,"L:",2);
-    OLED_ShowAllFloat(12,6,ShowDataCo.LeftWheel_Velocity,2,16,1);
-    oled_show_string(60,6,"R:",2);
-    OLED_ShowAllFloat(72,6,ShowDataCo.RightWheel_Velocity,2,16,1);
+    //oled_show_string(0,6,"L:",2);
+    OLED_ShowAllFloat(0,6,ShowDataCo.LeftWheel_Velocity,2,16,1);
+    //oled_show_string(60,6,"R:",2);
+    OLED_ShowAllFloat(60,6,ShowDataCo.RightWheel_Velocity,2,16,1);
 }
 
 // // SHOW::SHOW()

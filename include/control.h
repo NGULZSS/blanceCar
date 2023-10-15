@@ -4,13 +4,13 @@
 
 #define PI 3.14159265							//PI圆周率
 #define Control_Frequency  200.0	//编码器读取频率
-#define Diameter_67  67.0 				//轮子直径67mm
+#define Diameter_67  0.067 				//轮子直径0.067m
 #define EncoderMultiples   4.0 		//编码器倍频数
 #define Encoder_precision  13.0 	//编码器精度 13线
 #define Reduction_Ratio  30.0			//减速比30
-#define Perimeter  210.4867 			//周长，单位mm
+#define Perimeter    0.21048 			//周长，单位m
 
-#define Middle_angle 0
+#define Middle_angle 1.5
 #define DIFFERENCE 100
     struct UprightRingPID
     {
@@ -37,7 +37,7 @@ struct Gyroscope_Information  //陀螺仪信息
 
 int Read_Encoder(uint8_t TIMX);
 int Balance(float angle,float gyro);
-int Velocity(int encoder_left,int encoder_right);
+int Velocity(float encoder_left,float encoder_right);
 int Turn(float gyro);
 void Set_Pwm(int motor_left,int motor_right);
 void Key(void);
@@ -52,8 +52,4 @@ void Get_Velocity_Form_Encoder(int encoder_left,int encoder_right);
 void Choose(int encoder_left,int encoder_right);
 int SpeedDealRigit(int SPEED);
 int SpeedDealLeft(int SPEED);
-
-
-
-
 #endif
